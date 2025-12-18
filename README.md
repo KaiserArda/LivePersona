@@ -24,5 +24,13 @@ python3.9 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ./run_demo.sh
+```
+## Acknowledgements
 
+This project is built upon the research work:
+**First Order Motion Model for Image Animation**  
+Aliaksandr Siarohin et al., NeurIPS 2019.
+
+The original implementation can be found at:
+https://github.com/AliaksandrSiarohin/first-order-model
 
