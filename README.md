@@ -25,6 +25,28 @@ source venv/bin/activate
 pip install -r requirements.txt
 ./run_demo.sh
 ```
+
+## Model Weights
+
+Download the pretrained VoxCeleb model:
+https://github.com/AliaksandrSiarohin/first-order-model#pretrained-models
+
+Place the file here:
+LivePersona/checkpoints/vox-cpk.pth.tar
+
+## Demo Inputs
+
+Provide:
+- A source image: `demo/avatar.jpg`
+- A driving video: `demo/driving.mp4`
+
+You may use your own files.
+
+## Disclaimer
+
+This repository is intended for research and demonstration purposes only.
+It is not an official implementation of the original paper.
+
 ## Acknowledgements
 
 This project is built upon the research work:
