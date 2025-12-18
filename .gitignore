@@ -1,3 +1,21 @@
-/.vscode
-__pycache__
-/venv
+# Editor
+.vscode/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Model checkpoints (DO NOT COMMIT)
+checkpoints/
+
+# Demo outputs & media
+demo/
+*.mp4
+*.jpg
+*.png
+*.gif
+
+# OS
+.DS_Store
+
