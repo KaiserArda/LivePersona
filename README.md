@@ -15,32 +15,20 @@ Single image → animated facial motion
 - One-command demo execution
 - Linux environment support
 
-## Quick Start
 
-```bash
-git clone https://github.com/YOUR_USERNAME/LivePersona.git
-cd LivePersona
-python3.9 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-./run_demo.sh
-```
+## Installation & Running the Demo
 
-## Model Weights
+This project requires a Linux environment (Ubuntu recommended), Python 3.9, an NVIDIA GPU with CUDA support, and Git installed on the system.
 
-Download the pretrained VoxCeleb model:
-https://github.com/AliaksandrSiarohin/first-order-model#pretrained-models
+First, clone the repository and enter the project directory. Then create a Python virtual environment and activate it. After activating the environment, upgrade pip and install all required Python dependencies from the requirements.txt file.
 
-Place the file here:
-LivePersona/checkpoints/vox-cpk.pth.tar
+Next, download the pretrained VoxCeleb model provided by the authors of the First Order Motion Model. The model file is named vox-cpk.pth.tar and must be placed inside the checkpoints/ directory of the project.
 
-## Demo Inputs
+After the model is in place, prepare the demo inputs. Provide a source image named avatar.jpg inside the demo/ folder and a driving video named driving.mp4 in the same directory. You may replace these files with your own image and video as long as the filenames remain the same.
 
-Provide:
-- A source image: `demo/avatar.jpg`
-- A driving video: `demo/driving.mp4`
+Finally, make the demo script executable and run it. The script will generate an animated result video named result.mp4 in the project directory.
 
-You may use your own files.
+
 
 ## Disclaimer
 
