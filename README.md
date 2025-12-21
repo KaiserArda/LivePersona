@@ -1,6 +1,6 @@
 # LivePersona
 
-LivePersona is a GPU-accelerated AI system that animates a human face from a single image using motion extracted from a driving video.
+LivePersona is a GPU-accelerated AI system that animates a human face from a single image using motion extracted from>
 
 This repository currently contains a working technical demo based on the First Order Motion Model.
 
@@ -18,17 +18,44 @@ Single image → animated facial motion
 
 ## Installation & Running the Demo
 
-This project requires a Linux environment (Ubuntu recommended), Python 3.9, an NVIDIA GPU with CUDA support, and Git installed on the system.
+```bash
+git clone https://github.com/KaiserArda/LivePersona.git
+cd LivePersona
+python3.9 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-First, clone the repository and enter the project directory. Then create a Python virtual environment and activate it. After activating the environment, upgrade pip and install all required Python dependencies from the requirements.txt file.
+## Model Weights
 
-Next, download the pretrained VoxCeleb model provided by the authors of the First Order Motion Model. The model file is named vox-cpk.pth.tar and must be placed inside the checkpoints/ directory of the project.
+Download the pretrained VoxCeleb model from:
+https://github.com/AliaksandrSiarohin/first-order-model#pretrained-models
 
-After the model is in place, prepare the demo inputs. Provide a source image named avatar.jpg inside the demo/ folder and a driving video named driving.mp4 in the same directory. You may replace these files with your own image and video as long as the filenames remain the same.
+Place the file here:
+```bash
 
-Finally, make the demo script executable and run it. The script will generate an animated result video named result.mp4 in the project directory.
+LivePersona/checkpoints/vox-cpk.pth.tar
+```    
+## Demo Inputs
 
+- Source image: demo/avatar.jpg
+- Driving video: demo/driving.mp4
 
+You may replace them with your own files.
+
+## Run
+```bash
+
+chmod +x run_demo.sh
+./run_demo.sh
+```
+
+The output video will be generated as:
+
+```bash
+result.mp4
+```
 
 ## Disclaimer
 
@@ -39,8 +66,8 @@ It is not an official implementation of the original paper.
 
 This project is built upon the research work:
 **First Order Motion Model for Image Animation**  
-Aliaksandr Siarohin et al., NeurIPS 2019.
+First Order Motion Model for Image Animation (NeurIPS 2019)
+
 
 The original implementation can be found at:
 https://github.com/AliaksandrSiarohin/first-order-model
-
