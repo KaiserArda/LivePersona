@@ -71,3 +71,14 @@ First Order Motion Model for Image Animation (NeurIPS 2019)
 
 The original implementation can be found at:
 https://github.com/AliaksandrSiarohin/first-order-model
+
+
+## Demo 256x256
+
+https://github.com/user-attachments/assets/825e764a-3a1e-4606-9db0-9c7122c67695
+
+## Demo 512x512
+
+https://github.com/user-attachments/assets/53e769fb-cfc3-4f2c-b820-b5db1f88820c
+
+
